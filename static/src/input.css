@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  :root {
+    --color-primary: #8180ea;
+    --color-primary-dark: #12105d;
+    --color-accent: #a5a7f0;
+    --color-accent-light: #d7d9ef;
+    --color-bg-light: #f9f9ff;
+    --color-bg-lighter: #f1f1fd;
+  }
+
+  body {
+    @apply antialiased selection:bg-purple-200 selection:text-purple-900 dark:selection:bg-purple-500/30 dark:selection:text-white;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-gray-200/50 shadow-sm dark:bg-white/5 dark:border-white/10 dark:shadow-none;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .animate-fade-in:nth-child(1) { animation-delay: 0.1s; }
+  .animate-fade-in:nth-child(2) { animation-delay: 0.2s; }
+  .animate-fade-in:nth-child(3) { animation-delay: 0.3s; }
+  .animate-fade-in:nth-child(4) { animation-delay: 0.4s; }
+  .animate-fade-in:nth-child(5) { animation-delay: 0.5s; }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

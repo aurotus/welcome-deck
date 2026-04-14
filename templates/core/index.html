@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 lg:px-8 pt-48 pb-20 text-center relative z-10">
+    <!-- Hero Background Elements -->
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-10 left-10 w-72 h-72 rounded-full blur-3xl animate-float" style="background: radial-gradient(circle, rgba(129, 128, 234, 0.15) 0%, transparent 70%);"></div>
+        <div class="absolute top-32 right-16 w-48 h-48 rounded-full blur-2xl animate-drift" style="background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);"></div>
+        <div class="absolute bottom-20 left-1/4 w-56 h-56 rounded-full blur-3xl animate-pulse" style="background: radial-gradient(circle, rgba(147, 51, 234, 0.1) 0%, transparent 70%); animation-delay: 3s;"></div>
+    </div>
+    <h1 class="text-6xl md:text-8xl font-archivo font-extrabold tracking-tight mb-8 text-purple-dark">
+        meet aurotus,<br>
+        <span style="background: linear-gradient(to right, #8180ea, #a5a7f0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Free up time,</span><br>
+        <span class="text-dark">Build apps people love</span>
+    </h1>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+        <a href="#" class="px-8 py-4 bg-purple-primary text-white rounded-full font-inter font-semibold text-lg hover:scale-105 transition-all duration-200 shadow-lg" style="box-shadow: 0 10px 15px -3px rgba(129, 128, 234, 0.3);">Get access</a>
+        <a href="#" class="px-8 py-4 glass text-purple-primary rounded-full font-inter font-semibold text-lg hover:bg-purple-light transition-all duration-200">Contact us</a>
+    </div>
+</section>
+
+<!-- Interactive Interface Mockup / "TEST" -->
+<section class="max-w-5xl mx-auto px-6 lg:px-8 mb-32">
+    <div class="glass rounded-2xl p-2 border border-purple-light shadow-2xl overflow-hidden relative">
+        <div class="bg-white rounded-xl overflow-hidden border border-purple-light">
+            <div class="flex items-center px-4 py-3 border-b border-purple-light bg-purple-light">
+                <div class="flex gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div class="mx-auto text-xs font-mono text-medium">aurotus / test-run</div>
+            </div>
+            <div class="p-8 md:p-16 text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-blue-600 dark:text-blue-400 text-xs font-medium mb-6">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                    TEST COMPLETED
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 text-dark">Assign a ticket.<br>Attach your Figma.<br>Get a PR with tested code.</h2>
+                <a href="#" class="inline-block mt-4 px-6 py-2 glass text-dark rounded-full font-medium hover:bg-purple-light transition-colors">Try now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tech Stack -->
+<section class="max-w-7xl mx-auto px-6 lg:px-8 py-16 border-y border-purple-light text-center">
+    <p class="text-sm font-inter font-medium text-purple-primary mb-8 uppercase tracking-widest">Works with your stack</p>
+    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80 text-purple-dark">
+        <span class="text-xl font-archivo font-semibold">React Native</span>
+        <span class="text-xl font-archivo font-semibold">Flutter</span>
+        <span class="text-xl font-archivo font-semibold">Swift</span>
+        <span class="text-xl font-archivo font-semibold">Kotlin</span>
+        <span class="text-xl font-archivo font-semibold">Slack</span>
+        <span class="text-xl font-archivo font-semibold">Linear</span>
+    </div>
+</section>
+
+<!-- Features Grid -->
+<section class="max-w-7xl mx-auto px-6 lg:px-8 py-32 relative">
+    <!-- Features Background -->
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-16 right-12 w-64 h-64 rounded-full blur-3xl animate-float" style="background: radial-gradient(circle, rgba(129, 128, 234, 0.12) 0%, transparent 70%);"></div>
+        <div class="absolute bottom-16 left-8 w-48 h-48 rounded-full blur-2xl animate-drift" style="background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+        <div class="animate-fade-in glass p-10 rounded-3xl border border-purple-light hover:border-purple-primary hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <div class="text-purple-primary text-sm font-inter font-semibold tracking-wide uppercase mb-4">Agentic Automation</div>
+            <h3 class="text-2xl font-archivo font-bold mb-4 text-purple-dark">Scale Output Without Scaling Headcount</h3>
+            <p class="text-dark leading-relaxed">Mini handles a portion of your feature delivery so your engineers can focus on what they do best — building a great product people love.</p>
+        </div>
+
+        <div class="animate-fade-in glass p-10 rounded-3xl border border-purple-light hover:border-purple-primary hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <div class="text-purple-primary text-sm font-inter font-semibold tracking-wide uppercase mb-4">Define & Plan</div>
+            <h3 class="text-2xl font-archivo font-bold mb-4 text-purple-dark">Migrate Anything. Break Nothing.</h3>
+            <p class="text-dark leading-relaxed">React Native to native. Web to mobile. One codebase to two. Our agents can spin up both the old app and the new app, iterate across platforms, and update multiple repositories simultaneously — so nothing falls through the cracks while your migration is in flight.</p>
+        </div>
+
+        <div class="animate-fade-in glass p-10 rounded-3xl border border-purple-light hover:border-purple-primary hover:shadow-lg hover:scale-105 transition-all duration-300 md:col-span-2 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1">
+                <div class="text-purple-primary text-sm font-inter font-semibold tracking-wide uppercase mb-4">Create & Code</div>
+                <h3 class="text-3xl font-archivo font-bold mb-4 text-purple-dark">Release With Confidence</h3>
+                <p class="text-dark leading-relaxed max-w-2xl">AI agents regression-test your entire app on real devices on every push — so you catch what humans miss before your users do.</p>
+            </div>
+            <div class="w-full md:w-1/3 aspect-square rounded-2xl bg-purple-light border border-purple-light flex items-center justify-center">
+                <!-- Decorative Graphic -->
+                <div class="w-24 h-24 rounded-full border-4 border-dashed border-purple-light animate-spin" style="animation-duration: 10s;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="max-w-3xl mx-auto px-6 lg:px-8 py-20 border-t border-purple-light">
+    <h3 class="text-3xl font-archivo font-bold mb-12 text-center text-purple-dark">FAQ</h3>
+    <div class="space-y-4">
+        <!-- FAQ Item -->
+        <details class="group glass rounded-xl [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex items-center justify-between p-6 cursor-pointer font-inter font-medium text-lg text-purple-dark">
+                What devices and platforms do you support?
+                <span class="transition group-open:rotate-180">
+                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                </span>
+            </summary>
+            <div class="p-6 pt-0 text-dark">
+                We support iOS, Android, cross-platform frameworks, and web migrations seamlessly.
+            </div>
+        </details>
+        <!-- FAQ Item -->
+        <details class="group glass rounded-xl [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex items-center justify-between p-6 cursor-pointer font-inter font-medium text-lg text-purple-dark">
+                How is this different from Cursor, Copilot, or Lovable?
+                <span class="transition group-open:rotate-180">
+                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                </span>
+            </summary>
+            <div class="p-6 pt-0 text-dark">
+                Aurotus doesn't just autocomplete code, it serves as a fully agentic backend engineer capable of testing and full-repository refactoring autonomously.
+            </div>
+        </details>
+        <!-- FAQ Item -->
+        <details class="group glass rounded-xl [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex items-center justify-between p-6 cursor-pointer font-inter font-medium text-lg text-purple-dark">
+                Does my code leave my infrastructure?
+                <span class="transition group-open:rotate-180">
+                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                </span>
+            </summary>
+            <div class="p-6 pt-0 text-dark">
+                Security is our top priority. Everything is routed through isolated compliance paths so your IP is protected.
+            </div>
+        </details>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="max-w-7xl mx-auto px-6 lg:px-8 py-32 text-center text-purple-dark">
+    <h2 class="text-4xl md:text-6xl font-archivo font-bold mb-8 text-purple-dark">Start shipping.</h2>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#" class="px-8 py-4 bg-purple-primary rounded-full font-inter font-semibold text-lg hover:scale-105 transition-all duration-200 shadow-lg text-white" style="box-shadow: 0 10px 15px -3px rgba(129, 128, 234, 0.3);">Request Access</a>
+        <a href="#" class="px-8 py-4 glass rounded-full font-inter font-semibold text-lg hover:bg-purple-light transition-all duration-200 text-purple-primary">Contact us</a>
+    </div>
+</section>
+
+{% endblock content %}
