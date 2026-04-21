@@ -1,147 +1,237 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!-- Hero Section -->
-<section class="max-w-7xl mx-auto px-6 lg:px-8 pt-48 pb-20 text-center relative z-10">
-    <!-- Hero Background Elements -->
-    <div class="absolute inset-0 -z-10 overflow-hidden">
-        <div class="absolute top-10 left-10 w-72 h-72 rounded-full blur-3xl animate-float" style="background: radial-gradient(circle, rgba(129, 128, 234, 0.15) 0%, transparent 70%);"></div>
-        <div class="absolute top-32 right-16 w-48 h-48 rounded-full blur-2xl animate-drift" style="background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);"></div>
-        <div class="absolute bottom-20 left-1/4 w-56 h-56 rounded-full blur-3xl animate-pulse" style="background: radial-gradient(circle, rgba(147, 51, 234, 0.1) 0%, transparent 70%); animation-delay: 3s;"></div>
+<section class="au-shell hero-grid" id="top">
+    <div class="hero-copy">
+        <div class="eyebrow-row">
+            <span class="eyebrow-pill">AI-native systems studio</span>
+            <span class="eyebrow-link">Private alpha</span>
+        </div>
+        <h1 class="hero-title">Stop stitching tools together. Start shipping one intelligent system.</h1>
+        <p class="hero-text">
+            Aurotus designs, automates, and tests your product stack end to end, so launches feel coordinated instead of chaotic.
+        </p>
+        <div class="cta-row">
+            <a href="#contact" class="btn btn-primary">Request access</a>
+            <a href="#capabilities" class="btn btn-secondary">See capabilities</a>
+        </div>
+        <div class="trust-row">
+            <span>Product strategy</span>
+            <span>Automation</span>
+            <span>QA</span>
+            <span>Launch systems</span>
+        </div>
     </div>
-    <h1 class="text-6xl md:text-8xl font-archivo font-extrabold tracking-tight mb-8 text-purple-dark">
-        meet aurotus,<br>
-        <span style="background: linear-gradient(to right, #8180ea, #a5a7f0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Free up time,</span><br>
-        <span class="text-dark">Build apps people love</span>
-    </h1>
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
-        <a href="#" class="px-8 py-4 bg-purple-primary text-white rounded-full font-inter font-semibold text-lg hover:scale-105 transition-all duration-200 shadow-lg" style="box-shadow: 0 10px 15px -3px rgba(129, 128, 234, 0.3);">Get access</a>
-        <a href="#" class="px-8 py-4 glass text-purple-primary rounded-full font-inter font-semibold text-lg hover:bg-purple-light transition-all duration-200">Contact us</a>
-    </div>
-</section>
-
-<!-- Interactive Interface Mockup / "TEST" -->
-<section class="max-w-5xl mx-auto px-6 lg:px-8 mb-32">
-    <div class="glass rounded-2xl p-2 border border-purple-light shadow-2xl overflow-hidden relative">
-        <div class="bg-white rounded-xl overflow-hidden border border-purple-light">
-            <div class="flex items-center px-4 py-3 border-b border-purple-light bg-purple-light">
-                <div class="flex gap-2">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+    <div class="hero-visual">
+        <div class="hero-orbit hero-orbit-one"></div>
+        <div class="hero-orbit hero-orbit-two"></div>
+        <div class="dashboard-card dashboard-main">
+            <div class="card-topline">
+                <span class="status-dot"></span>
+                <span>Aurotus orchestration</span>
+            </div>
+            <div class="mini-terminal">
+                <div class="terminal-line">
+                    <span class="terminal-label">New brief</span>
+                    <span class="terminal-value">Multi-product launch sprint</span>
                 </div>
-                <div class="mx-auto text-xs font-mono text-medium">aurotus / test-run</div>
-            </div>
-            <div class="p-8 md:p-16 text-center">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-blue-600 dark:text-blue-400 text-xs font-medium mb-6">
-                    <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-                    TEST COMPLETED
+                <div class="terminal-line">
+                    <span class="terminal-label">Priority</span>
+                    <span class="terminal-value">Critical path aligned</span>
                 </div>
-                <h2 class="text-3xl md:text-5xl font-bold mb-6 text-dark">Assign a ticket.<br>Attach your Figma.<br>Get a PR with tested code.</h2>
-                <a href="#" class="inline-block mt-4 px-6 py-2 glass text-dark rounded-full font-medium hover:bg-purple-light transition-colors">Try now</a>
+                <div class="terminal-line">
+                    <span class="terminal-label">Status</span>
+                    <span class="terminal-value accent-text">Design, build, QA in sync</span>
+                </div>
             </div>
+            <div class="signal-grid">
+                <div class="signal-card">
+                    <strong>12</strong>
+                    <span>flows automated</span>
+                </div>
+                <div class="signal-card">
+                    <strong>4</strong>
+                    <span>products connected</span>
+                </div>
+                <div class="signal-card">
+                    <strong>99%</strong>
+                    <span>release confidence</span>
+                </div>
+                <div class="signal-card">
+                    <strong>24/7</strong>
+                    <span>system monitoring</span>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-card dashboard-float dashboard-float-left">
+            <span class="float-label">Launch map</span>
+            <strong>Systems, not silos</strong>
+        </div>
+        <div class="dashboard-card dashboard-float dashboard-float-right">
+            <span class="float-label">Live sync</span>
+            <strong>Every team on one source of truth</strong>
         </div>
     </div>
 </section>
 
-<!-- Tech Stack -->
-<section class="max-w-7xl mx-auto px-6 lg:px-8 py-16 border-y border-purple-light text-center">
-    <p class="text-sm font-inter font-medium text-purple-primary mb-8 uppercase tracking-widest">Works with your stack</p>
-    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80 text-purple-dark">
-        <span class="text-xl font-archivo font-semibold">React Native</span>
-        <span class="text-xl font-archivo font-semibold">Flutter</span>
-        <span class="text-xl font-archivo font-semibold">Swift</span>
-        <span class="text-xl font-archivo font-semibold">Kotlin</span>
-        <span class="text-xl font-archivo font-semibold">Slack</span>
-        <span class="text-xl font-archivo font-semibold">Linear</span>
+<section class="au-shell logo-section">
+    <p class="section-kicker centered">Built for modern operators</p>
+    <div class="logo-marquee">
+        <span>Product Teams</span>
+        <span>Founders</span>
+        <span>Internal Ops</span>
+        <span>Marketplaces</span>
+        <span>Healthcare Tools</span>
+        <span>AI Workflows</span>
     </div>
 </section>
 
-<!-- Features Grid -->
-<section class="max-w-7xl mx-auto px-6 lg:px-8 py-32 relative">
-    <!-- Features Background -->
-    <div class="absolute inset-0 -z-10 overflow-hidden">
-        <div class="absolute top-16 right-12 w-64 h-64 rounded-full blur-3xl animate-float" style="background: radial-gradient(circle, rgba(129, 128, 234, 0.12) 0%, transparent 70%);"></div>
-        <div class="absolute bottom-16 left-8 w-48 h-48 rounded-full blur-2xl animate-drift" style="background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);"></div>
+<section class="au-shell showcase-grid">
+    <div class="showcase-panel">
+        <p class="section-kicker">meet aurotus</p>
+        <h2 class="section-title">Assign the outcome. We build the operating layer around it.</h2>
+        <p class="section-copy">
+            From product concept to launch operations, Aurotus turns disconnected ideas into a unified system with automation, interfaces, and validation baked in.
+        </p>
+        <a href="#capabilities" class="inline-link">Explore the system</a>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-        <div class="animate-fade-in glass p-10 rounded-3xl border border-purple-light hover:border-purple-primary hover:shadow-lg hover:scale-105 transition-all duration-300">
-            <div class="text-purple-primary text-sm font-inter font-semibold tracking-wide uppercase mb-4">Agentic Automation</div>
-            <h3 class="text-2xl font-archivo font-bold mb-4 text-purple-dark">Scale Output Without Scaling Headcount</h3>
-            <p class="text-dark leading-relaxed">Mini handles a portion of your feature delivery so your engineers can focus on what they do best — building a great product people love.</p>
-        </div>
-
-        <div class="animate-fade-in glass p-10 rounded-3xl border border-purple-light hover:border-purple-primary hover:shadow-lg hover:scale-105 transition-all duration-300">
-            <div class="text-purple-primary text-sm font-inter font-semibold tracking-wide uppercase mb-4">Define & Plan</div>
-            <h3 class="text-2xl font-archivo font-bold mb-4 text-purple-dark">Migrate Anything. Break Nothing.</h3>
-            <p class="text-dark leading-relaxed">React Native to native. Web to mobile. One codebase to two. Our agents can spin up both the old app and the new app, iterate across platforms, and update multiple repositories simultaneously — so nothing falls through the cracks while your migration is in flight.</p>
-        </div>
-
-        <div class="animate-fade-in glass p-10 rounded-3xl border border-purple-light hover:border-purple-primary hover:shadow-lg hover:scale-105 transition-all duration-300 md:col-span-2 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-            <div class="flex-1">
-                <div class="text-purple-primary text-sm font-inter font-semibold tracking-wide uppercase mb-4">Create & Code</div>
-                <h3 class="text-3xl font-archivo font-bold mb-4 text-purple-dark">Release With Confidence</h3>
-                <p class="text-dark leading-relaxed max-w-2xl">AI agents regression-test your entire app on real devices on every push — so you catch what humans miss before your users do.</p>
-            </div>
-            <div class="w-full md:w-1/3 aspect-square rounded-2xl bg-purple-light border border-purple-light flex items-center justify-center">
-                <!-- Decorative Graphic -->
-                <div class="w-24 h-24 rounded-full border-4 border-dashed border-purple-light animate-spin" style="animation-duration: 10s;"></div>
-            </div>
+    <div class="stack-panel">
+        <p class="stack-title">Works across your stack</p>
+        <div class="stack-badges">
+            <span>Django</span>
+            <span>React</span>
+            <span>Automation</span>
+            <span>Internal tools</span>
+            <span>Marketplaces</span>
+            <span>Mobile-ready</span>
+            <span>AI flows</span>
         </div>
     </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="max-w-3xl mx-auto px-6 lg:px-8 py-20 border-t border-purple-light">
-    <h3 class="text-3xl font-archivo font-bold mb-12 text-center text-purple-dark">FAQ</h3>
-    <div class="space-y-4">
-        <!-- FAQ Item -->
-        <details class="group glass rounded-xl [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex items-center justify-between p-6 cursor-pointer font-inter font-medium text-lg text-purple-dark">
-                What devices and platforms do you support?
-                <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                </span>
-            </summary>
-            <div class="p-6 pt-0 text-dark">
-                We support iOS, Android, cross-platform frameworks, and web migrations seamlessly.
-            </div>
+<section class="au-shell cards-section" id="capabilities">
+    <div class="section-heading">
+        <p class="section-kicker">System flow</p>
+        <h2 class="section-title">Three layers. One launch engine.</h2>
+    </div>
+    <div class="capability-grid">
+        <article class="feature-card">
+            <p class="feature-tag">Define & plan</p>
+            <h3>Migrate messy ideas into clear execution.</h3>
+            <p>We translate concepts, requirements, and scattered workflows into a roadmap your product, operations, and engineering layers can all follow.</p>
+        </article>
+        <article class="feature-card">
+            <p class="feature-tag">Create & build</p>
+            <h3>Design products that feel connected by default.</h3>
+            <p>Interfaces, logic, and automation are shaped together, so every touchpoint shares the same behavior, voice, and data model.</p>
+        </article>
+        <article class="feature-card">
+            <p class="feature-tag">Validate & release</p>
+            <h3>Ship with confidence instead of cleanup debt.</h3>
+            <p>Every release path is reviewed against the system around it, reducing breakage between tools, teams, and customer-facing surfaces.</p>
+        </article>
+    </div>
+</section>
+
+<section class="dark-band">
+    <div class="au-shell dark-band-inner">
+        <div class="section-heading">
+            <p class="section-kicker light">Why Aurotus</p>
+            <h2 class="section-title light">The feel of a premium product studio, backed by real operating logic.</h2>
+        </div>
+        <div class="reason-grid">
+            <article>
+                <h3>Framework agnostic</h3>
+                <p>We build around outcomes, not one rigid stack choice.</p>
+            </article>
+            <article>
+                <h3>Cross-platform thinking</h3>
+                <p>Web, internal ops, automation, and future mobile surfaces are designed as one system.</p>
+            </article>
+            <article>
+                <h3>Enterprise-ready structure</h3>
+                <p>Clean information architecture, controlled workflows, and scalable patterns from day one.</p>
+            </article>
+            <article>
+                <h3>Real-world validation</h3>
+                <p>We optimize for things actually working when teams and customers touch them.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="au-shell cta-section" id="contact">
+    <div class="cta-panel">
+        <div>
+            <p class="section-kicker">Ready to move</p>
+            <h2>Stop building disconnected apps. Start shipping a system people can trust.</h2>
+        </div>
+        <div class="cta-row">
+            <a href="mailto:hello@aurotus.com" class="btn btn-primary">Request access</a>
+            <a href="mailto:hello@aurotus.com" class="btn btn-secondary">Contact us</a>
+        </div>
+    </div>
+</section>
+
+<section class="au-shell faq-section">
+    <div class="section-heading">
+        <p class="section-kicker">FAQ</p>
+        <h2 class="section-title">Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+        <details open>
+            <summary>What does Aurotus actually build?</summary>
+            <p>We build connected product systems: customer-facing apps, operational tooling, automation layers, and the logic that keeps them aligned.</p>
         </details>
-        <!-- FAQ Item -->
-        <details class="group glass rounded-xl [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex items-center justify-between p-6 cursor-pointer font-inter font-medium text-lg text-purple-dark">
-                How is this different from Cursor, Copilot, or Lovable?
-                <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                </span>
-            </summary>
-            <div class="p-6 pt-0 text-dark">
-                Aurotus doesn't just autocomplete code, it serves as a fully agentic backend engineer capable of testing and full-repository refactoring autonomously.
-            </div>
+        <details>
+            <summary>Is this for one product or multiple products?</summary>
+            <p>Both. Aurotus works especially well when one company needs several products or workflows to behave like a single ecosystem.</p>
         </details>
-        <!-- FAQ Item -->
-        <details class="group glass rounded-xl [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex items-center justify-between p-6 cursor-pointer font-inter font-medium text-lg text-purple-dark">
-                Does my code leave my infrastructure?
-                <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                </span>
-            </summary>
-            <div class="p-6 pt-0 text-dark">
-                Security is our top priority. Everything is routed through isolated compliance paths so your IP is protected.
-            </div>
+        <details>
+            <summary>Can you work with our existing stack?</summary>
+            <p>Yes. The goal is to connect and improve what already exists where possible, then introduce new layers only when they create leverage.</p>
+        </details>
+        <details>
+            <summary>How is this different from hiring for one-off delivery?</summary>
+            <p>One-off delivery ships isolated features. We shape the surrounding structure too, so future launches get easier instead of more fragile.</p>
         </details>
     </div>
 </section>
 
-<!-- Final CTA -->
-<section class="max-w-7xl mx-auto px-6 lg:px-8 py-32 text-center text-purple-dark">
-    <h2 class="text-4xl md:text-6xl font-archivo font-bold mb-8 text-purple-dark">Start shipping.</h2>
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#" class="px-8 py-4 bg-purple-primary rounded-full font-inter font-semibold text-lg hover:scale-105 transition-all duration-200 shadow-lg text-white" style="box-shadow: 0 10px 15px -3px rgba(129, 128, 234, 0.3);">Request Access</a>
-        <a href="#" class="px-8 py-4 glass rounded-full font-inter font-semibold text-lg hover:bg-purple-light transition-all duration-200 text-purple-primary">Contact us</a>
+<section class="au-shell article-section">
+    <div class="section-heading article-heading">
+        <div>
+            <p class="section-kicker">Insights</p>
+            <h2 class="section-title">Featured directions</h2>
+        </div>
+        <a href="#top" class="inline-link">Back to top</a>
+    </div>
+    <div class="article-grid">
+        <article class="article-card">
+            <span class="article-label">Launch systems</span>
+            <h3>Why modern products fail when operations stay manual.</h3>
+            <p>Aurotus treats release operations as part of the product, not an afterthought tacked on at the end.</p>
+        </article>
+        <article class="article-card">
+            <span class="article-label">Digital ecosystems</span>
+            <h3>How connected tools create calmer teams and better customer experiences.</h3>
+            <p>Consistency across products reduces internal friction and makes growth feel intentional rather than reactive.</p>
+        </article>
+        <article class="article-card">
+            <span class="article-label">AI workflows</span>
+            <h3>Automation only works when the surrounding system is designed for it.</h3>
+            <p>The best AI outcomes come from clear states, clean handoffs, and interfaces that expose the right context.</p>
+        </article>
     </div>
 </section>
 
+<section class="au-shell about-section">
+    <div class="about-card">
+        <p class="section-kicker">Built with intent</p>
+        <h2 class="section-title">Designed for ambitious teams that need clarity, not more noise.</h2>
+        <p class="section-copy">
+            Aurotus is built around a simple belief: products should feel like they belong to the same world. When structure, design, and automation move together, teams move faster and customers feel it.
+        </p>
+    </div>
+</section>
 {% endblock content %}
